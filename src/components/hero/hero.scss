@@ -1,13 +1,26 @@
+@import "../../main.scss";
+
 .hero-component {
   width: 100%;
   display: flex;
   margin-top: 30px;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 
   .hero-intro {
     flex: 1;
     display: flex;
     flex-direction: column;
     padding-right: 80px;
+
+    @include mobile {
+      text-align: center;
+      align-items: center;
+      padding-right: 0;
+      margin-top: 20px;
+    }
 
     h1 {
       font-size: 36px;
@@ -16,13 +29,18 @@
       font-weight: 600;
       font-style: normal;
       color: #33475b;
+
+      @include mobile {
+        font-size: 24px;
+      }
     }
+
     p {
       margin-top: 10px;
       font-size: 18px;
       font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
     }
 

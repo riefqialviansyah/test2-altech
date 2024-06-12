@@ -1,3 +1,5 @@
+@import "../../main.scss";
+
 .quote-component {
   margin: 30px;
   background-color: rgb(233, 233, 233);
@@ -22,6 +24,10 @@
       font-style: normal;
       color: #33475b;
       font-style: italic;
+
+      @include mobile {
+        font-size: 24px;
+      }
     }
 
     p {
