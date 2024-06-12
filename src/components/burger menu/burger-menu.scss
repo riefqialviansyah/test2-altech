@@ -1,0 +1,39 @@
+.burger-menu-component {
+  font-size: 20px;
+  position: absolute;
+  width: 150px;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgb(238, 202, 136);
+  padding: 5px;
+  right: -25px;
+  top: 60px;
+  border-radius: 10px;
+  list-style: none;
+  // Font
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  z-index: 1;
+
+  .burger-option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 5px;
+
+    li {
+      color: black;
+      border-radius: 10px;
+      padding: 2px 10px;
+      border-bottom: 1px solid rgb(175, 136, 62);
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+
+      &:hover {
+        background-color: orange;
+        color: white;
+      }
+    }
+  }
+}

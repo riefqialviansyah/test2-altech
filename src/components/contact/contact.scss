@@ -1,0 +1,77 @@
+.contact-component {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  .logo-contact {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+
+    img {
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .company-name {
+      color: white;
+
+      h3 {
+        font-size: 32px;
+      }
+      p {
+        color: orange;
+        font-style: italic;
+      }
+    }
+  }
+
+  .email-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 25px;
+
+    .phone,
+    .email {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        color: white;
+      }
+    }
+  }
+
+  .social-media {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .box-sosmed {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgb(48, 46, 46);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+}

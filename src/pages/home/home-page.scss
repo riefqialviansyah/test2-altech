@@ -1,0 +1,20 @@
+.home-page {
+  scroll-behavior: smooth;
+
+  .hero-section {
+    min-height: 600px;
+    padding: 40px;
+  }
+
+  .about-section {
+    min-height: 600px;
+  }
+
+  .pricing-section {
+    min-height: 600px;
+  }
+
+  .contact-section {
+    min-height: fit-content;
+  }
+}
