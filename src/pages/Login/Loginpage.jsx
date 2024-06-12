@@ -2,10 +2,10 @@ import Navbar from "../../components/navbar/Navbar";
 import Contact from "../../components/contact/Contact";
 import { ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import "react-toastify/dist/ReactToastify.css";
-import "./login.scss";
 import { successAlert } from "../../helpers/Alerts";
 import { useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import "./login.scss";
 
 export default function LoginPage() {
   const [inputUser, setInputUser] = useState({
