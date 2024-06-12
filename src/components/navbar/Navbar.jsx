@@ -1,10 +1,12 @@
 import { HiOutlineMenu, HiOutlineMenuAlt2 } from "react-icons/hi";
 import BurgerMenu from "../burger menu/BurgerMenu";
-import "./navbar.scss";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "./navbar.scss";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav>
@@ -18,7 +20,14 @@ export default function Navbar() {
         </div>
       </div>
       <div className="btn-nav">
-        <div className="login-btn">Login</div>
+        <div
+          className="login-btn"
+          onClick={() => {
+            navigate("/login");
+          }}
+        >
+          Login
+        </div>
         <div className="menu">
           {openMenu ? (
             <HiOutlineMenuAlt2
